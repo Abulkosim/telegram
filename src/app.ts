@@ -3,6 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import {config} from './config/environment';
+import authRoutes from './routes/authRoutes';
 
 const app: Application = express();
 
@@ -11,6 +12,8 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+app.use('/api/auth', authRoutes);
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Telegram-like App API');
