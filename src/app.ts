@@ -5,6 +5,8 @@ import morgan from 'morgan';
 import { config } from './config/environment';
 import authRoutes from './routes/authRoutes';
 import userRoutes from './routes/userRoutes';
+import messageRoutes from './routes/messageRoutes';
+
 const app: Application = express();
 
 app.use(cors());
@@ -15,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/messages', messageRoutes);
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Telegram-like App API');
