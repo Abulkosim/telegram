@@ -21,7 +21,7 @@ I'm working on a real-time messaging application in Node.js, Express, TypeScript
 
 1. Clone the repository:
    ```
-   git clone https://github.com/abulkosim/telegram.git
+   git clone https://github.com/Abulkosim/telegram-project-backend.git
    cd telegram
    ```
 
@@ -64,5 +64,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Your Name - [@abulkosimkataev](https://twitter.com/abulkosimkataev) - abulkasimkattaev@gmail.com.com
 ```
-Project Link: [https://github.com/abulkosim/telegram](https://github.com/abulkosim/telegram)
+Project Link: [https://github.com/Abulkosim/telegram-project-backend](https://github.com/Abulkosim/telegram-project-backend)
 ```
